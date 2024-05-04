@@ -1,0 +1,249 @@
+{
+	"info": {
+		"_postman_id": "cacc5c28-3c89-4264-8e0b-3054a5e64c2a",
+		"name": "Laravel api Movies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6751435"
+	},
+	"item": [
+		{
+			"name": "Get all",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"uuid": "d34ab0ac-d6f8-46a4-837c-6538cb5747fe"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|qTPZj09FTjqUM4TQrYg5oaWS7pLhadCzuYzNRRyp585d76ab",
+						"uuid": "fb0a578b-a50d-49a8-ac89-5707dbd47bb3"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/movies",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "store",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"uuid": "e45a3834-49b9-4714-9769-3f7f3b7a73f3"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|qTPZj09FTjqUM4TQrYg5oaWS7pLhadCzuYzNRRyp585d76ab",
+						"uuid": "c2bb04ca-7560-4411-ae60-96ab088e699c"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"test create\",\r\n    \"description\": \"Molestias odit perspiciatis dolorem eligendi totam animi quia. Eligendi autem omnis quibusdam molestias dicta repellendus.\",\r\n    \"genre\": \"Science Fiction\",\r\n    \"release_date\": \"1987-12-07\",\r\n    \"rating\": 0.9,\r\n    \"duration\": 79,\r\n    \"is_featured\": 0,\r\n    \"price\": \"31.38\",\r\n    \"director\": \"Mosciski\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/movies",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"uuid": "f470d2b2-72f7-4171-9c96-7c8fe49816bd"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|qTPZj09FTjqUM4TQrYg5oaWS7pLhadCzuYzNRRyp585d76ab",
+						"uuid": "fb160ee9-a32c-44fa-90ed-9545c17cf6fe"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/movies/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"movies",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"uuid": "335a506e-2ff9-4484-a271-7b72ad1dc095"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|qTPZj09FTjqUM4TQrYg5oaWS7pLhadCzuYzNRRyp585d76ab",
+						"uuid": "3e639319-920a-4df5-a353-e402cbbf6624"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Aspernatur sed cumque sequi. updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/movies/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"movies",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "destroy",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"uuid": "8fb625ef-2f39-48d9-b9d3-2277f260736f"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|qTPZj09FTjqUM4TQrYg5oaWS7pLhadCzuYzNRRyp585d76ab",
+						"uuid": "d75d21b2-6165-4f10-8e91-b12c7163fc35"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/movies/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"movies",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"uuid": "28c0ae6b-a1ab-4209-af52-4059edc0fc6e"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"test@example.com\",\r\n    \"password\": \"1234567890\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

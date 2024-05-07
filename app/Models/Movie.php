@@ -19,5 +19,11 @@ class Movie extends Model
         'is_featured',
         'price',
         'director',
+        'category_id'
     ];
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }

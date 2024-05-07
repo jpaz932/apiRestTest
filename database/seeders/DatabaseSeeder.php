@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Category;
 use App\Models\Movie;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -22,6 +23,7 @@ class DatabaseSeeder extends Seeder
             'password' => '1234567890'
         ]);
 
-        Movie::factory()->count(10)->create();
+        Category::factory(10)->create();
+        Movie::factory()->count(30)->create();
     }
 }

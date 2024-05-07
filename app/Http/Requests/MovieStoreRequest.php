@@ -31,6 +31,21 @@ class MovieStoreRequest extends FormRequest
             'is_featured' => 'sometimes|boolean',
             'price' => 'nullable|numeric|min:0',
             'director' => 'nullable|string|max:255',
+            'category_id' => ['required', 'exists:categories,id'],
         ];
+    }
+
+    /**
+     * Configure the validator instance.
+     *
+     * @param  \Illuminate\Validation\Validator  $validator
+     * @return void
+     */
+    public function withValidator($validator)
+    {
+        // Define el mensaje de error personalizado para la regla de validación 'exists'
+        $validator->addReplacer('exists', function ($message, $attribute, $rule, $parameters) {
+            return str_replace(':attribute', $attribute, 'The selected :attribute is invalid.');
+        });
     }
 }

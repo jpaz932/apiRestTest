@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use App\Models\Category;
+use App\Models\Movie;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -9,6 +11,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
  */
 class MovieFactory extends Factory
 {
+    protected $model = Movie::class;
     /**
      * Define the model's default state.
      *
@@ -26,6 +29,7 @@ class MovieFactory extends Factory
             'is_featured' => $this->faker->boolean(30),
             'price' => $this->faker->randomFloat(2, 5, 100),
             'director' => $this->faker->name,
+            'category_id' => Category::factory(),
         ];
     }
 }

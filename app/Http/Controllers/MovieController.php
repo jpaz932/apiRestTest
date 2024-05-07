@@ -29,9 +29,9 @@ class MovieController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Movie $Movie)
+    public function show(Movie $movie)
     {
-        return $Movie;
+        return $movie->load('category');
     }
 
     /**

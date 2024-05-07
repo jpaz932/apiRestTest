@@ -7,19 +7,19 @@
 	},
 	"item": [
 		{
-			"name": "Get all",
+			"name": "Movies Get all",
 			"request": {
 				"method": "GET",
 				"header": [
 					{
 						"key": "Accept",
 						"value": "application/json",
-						"uuid": "d34ab0ac-d6f8-46a4-837c-6538cb5747fe"
+						"uuid": "ce6cad09-53dd-4d32-aa3e-5e32675f6ffa"
 					},
 					{
 						"key": "Authorization",
 						"value": "Bearer 1|qTPZj09FTjqUM4TQrYg5oaWS7pLhadCzuYzNRRyp585d76ab",
-						"uuid": "fb0a578b-a50d-49a8-ac89-5707dbd47bb3"
+						"uuid": "765c8849-59c5-423e-baa0-d1f7f541c3bb"
 					}
 				],
 				"url": {
@@ -41,24 +41,24 @@
 			"response": []
 		},
 		{
-			"name": "store",
+			"name": "Movies store",
 			"request": {
 				"method": "POST",
 				"header": [
 					{
 						"key": "Accept",
 						"value": "application/json",
-						"uuid": "e45a3834-49b9-4714-9769-3f7f3b7a73f3"
+						"uuid": "b901d7ed-8169-4ac3-a284-ea63375aab2d"
 					},
 					{
 						"key": "Authorization",
 						"value": "Bearer 1|qTPZj09FTjqUM4TQrYg5oaWS7pLhadCzuYzNRRyp585d76ab",
-						"uuid": "c2bb04ca-7560-4411-ae60-96ab088e699c"
+						"uuid": "dbbc2a67-55ca-4262-af5c-233797c4d6e5"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"test create\",\r\n    \"description\": \"Molestias odit perspiciatis dolorem eligendi totam animi quia. Eligendi autem omnis quibusdam molestias dicta repellendus.\",\r\n    \"genre\": \"Science Fiction\",\r\n    \"release_date\": \"1987-12-07\",\r\n    \"rating\": 0.9,\r\n    \"duration\": 79,\r\n    \"is_featured\": 0,\r\n    \"price\": \"31.38\",\r\n    \"director\": \"Mosciski\"\r\n}",
+					"raw": "{\r\n    \"title\": \"test create\",\r\n    \"description\": \"Lorem odit perspiciatis dolorem eligendi totam animi quia. Eligendi autem omnis quibusdam molestias dicta repellendus.\",\r\n    \"genre\": \"Science Fiction\",\r\n    \"release_date\": \"1987-12-07\",\r\n    \"rating\": 0.9,\r\n    \"duration\": 79,\r\n    \"is_featured\": 0,\r\n    \"price\": \"31.38\",\r\n    \"director\": \"Mosciski\",\r\n    \"category_id\": 11\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -84,19 +84,19 @@
 			"response": []
 		},
 		{
-			"name": "show",
+			"name": "Movies show",
 			"request": {
 				"method": "GET",
 				"header": [
 					{
 						"key": "Accept",
 						"value": "application/json",
-						"uuid": "f470d2b2-72f7-4171-9c96-7c8fe49816bd"
+						"uuid": "b201182b-e017-4a01-b41c-8bd584fe73d9"
 					},
 					{
 						"key": "Authorization",
 						"value": "Bearer 1|qTPZj09FTjqUM4TQrYg5oaWS7pLhadCzuYzNRRyp585d76ab",
-						"uuid": "fb160ee9-a32c-44fa-90ed-9545c17cf6fe"
+						"uuid": "7e353cd5-66b7-4562-824f-c2769648f8c8"
 					}
 				],
 				"url": {
@@ -119,7 +119,7 @@
 			"response": []
 		},
 		{
-			"name": "update",
+			"name": "Movies update",
 			"protocolProfileBehavior": {
 				"disabledSystemHeaders": {
 					"accept": true
@@ -131,12 +131,12 @@
 					{
 						"key": "Accept",
 						"value": "application/json",
-						"uuid": "335a506e-2ff9-4484-a271-7b72ad1dc095"
+						"uuid": "668018a7-0e68-4305-9400-ce2c4bda8e5f"
 					},
 					{
 						"key": "Authorization",
 						"value": "Bearer 1|qTPZj09FTjqUM4TQrYg5oaWS7pLhadCzuYzNRRyp585d76ab",
-						"uuid": "3e639319-920a-4df5-a353-e402cbbf6624"
+						"uuid": "33f69187-fd2d-4358-b13e-7d17f76eb4bd"
 					}
 				],
 				"body": {
@@ -148,41 +148,6 @@
 						}
 					}
 				},
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/movies/2",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"movies",
-						"2"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "destroy",
-			"request": {
-				"method": "DELETE",
-				"header": [
-					{
-						"key": "Accept",
-						"value": "application/json",
-						"uuid": "8fb625ef-2f39-48d9-b9d3-2277f260736f"
-					},
-					{
-						"key": "Authorization",
-						"value": "Bearer 1|qTPZj09FTjqUM4TQrYg5oaWS7pLhadCzuYzNRRyp585d76ab",
-						"uuid": "d75d21b2-6165-4f10-8e91-b12c7163fc35"
-					}
-				],
 				"url": {
 					"raw": "http://127.0.0.1:8000/api/movies/1",
 					"protocol": "http",
@@ -203,6 +168,41 @@
 			"response": []
 		},
 		{
+			"name": "Movies destroy",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"uuid": "3dc22e97-c415-4704-ae51-4ebf493ff73c"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|qTPZj09FTjqUM4TQrYg5oaWS7pLhadCzuYzNRRyp585d76ab",
+						"uuid": "952a1276-9690-4ae1-946f-282d052f022e"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/movies/31",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"movies",
+						"31"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "login",
 			"protocolProfileBehavior": {
 				"disabledSystemHeaders": {
@@ -215,7 +215,7 @@
 					{
 						"key": "Accept",
 						"value": "application/json",
-						"uuid": "28c0ae6b-a1ab-4209-af52-4059edc0fc6e"
+						"uuid": "579c4805-7a2c-4e8f-a1fb-eb21a1e78451"
 					}
 				],
 				"body": {
@@ -240,6 +240,202 @@
 					"path": [
 						"api",
 						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Category show",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"uuid": "229424d0-7e8b-45f0-ab0f-6088201c2907"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|qTPZj09FTjqUM4TQrYg5oaWS7pLhadCzuYzNRRyp585d76ab",
+						"uuid": "3828334a-84e5-4ba5-9900-08c633ea04d9"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/categories/11",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categories",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Category Get all",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"uuid": "0f34f2fa-03de-49fb-96a3-91f62fb91ff9"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|qTPZj09FTjqUM4TQrYg5oaWS7pLhadCzuYzNRRyp585d76ab",
+						"uuid": "08dd0944-6221-4a70-a22b-1857fc745533"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/categories",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Category store",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"uuid": "fb927496-ceb4-4b96-9e3d-ec424cf6e542"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|qTPZj09FTjqUM4TQrYg5oaWS7pLhadCzuYzNRRyp585d76ab",
+						"uuid": "0946e2e0-22ce-4d6a-a31a-50a26a9bcdc2"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"test create\",\r\n    \"description\": \"Lorem odit perspiciatis dolorem eligendi totam animi quia. Eligendi autem omnis quibusdam molestias dicta repellendus.\",\r\n    \"is_active\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/categories",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Category destroy",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"uuid": "93cac34e-4bb5-4cb1-94ee-1ba46472ab93"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|qTPZj09FTjqUM4TQrYg5oaWS7pLhadCzuYzNRRyp585d76ab",
+						"uuid": "48632f25-38eb-4696-8192-847a466e3395"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/categories/41",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categories",
+						"41"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Category update",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"uuid": "b507bea2-201f-4819-8dc7-90237b3a04a8"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|qTPZj09FTjqUM4TQrYg5oaWS7pLhadCzuYzNRRyp585d76ab",
+						"uuid": "5e835f05-005c-4981-becc-2cd5b1f7585b"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"ut. updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/categories/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categories",
+						"1"
 					]
 				}
 			},
